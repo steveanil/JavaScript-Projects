@@ -1,0 +1,10 @@
+html {
+    /* it prevents padding from adding extra width/height basically it prevents stretching */
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    /* vh is viewport height which is the full height of our screen. we want to stretch our bg atleast to the full height of the screen eventhough its not enough to take up the full height of the screen */
+    min-height: 100vh;
+}

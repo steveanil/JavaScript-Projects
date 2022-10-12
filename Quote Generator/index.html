@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=css-tricks.com" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="quote-container" id="quote-container">
+        <!-- Quote -->
+        <!-- Adjusts the size of our quote font -->
+        <div class="quote-text">
+            <!-- this is for quotations " -->
+            <i class="fas fa-quote-left"></i>
+            <!-- we are using span because it will not take any other space other than the text itself -->
+            <span id="quote"></span> <!-- We need to add quote here dynamically using js-->
+        </div>
+        <!-- Author -->
+        <div class="quote-author">
+            <span id="author"></span> <!-- We need to add author name here dynamically using js-->
+        </div>
+        <!-- Buttons -->
+        <div class="button-container">
+            <button class="twitter-button" id="twitter" title="Tweet This G!">
+                <i class="fab fa-twitter"></i> <!-- We need to add functionality to the twitter button so that it can tweet the quote-->
+            </button>
+            <button id="new-quote">New Quote</button> <!-- We need to add functionality to the new button so that it gives us a new quote everytime its clicked-->
+        </div>
+    </div>
+    <!-- Loader -->
+    <div class="loader" id="loader"></div>
+    <!-- Script -->
+    <script src="script.js"></script>
+
+</body>
+</html>
