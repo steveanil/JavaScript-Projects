@@ -74,7 +74,7 @@ function displayPhotos(){
     });
 }
 
-// Get Photos from unsplash api
+// Get Photos from unsplash api (1)
 async function getPhotos(){
     try {
         const response = await fetch(apiUrl);
